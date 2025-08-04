@@ -18,10 +18,7 @@ Best model achieves **Test R² = 0.54** and **Test MSE = 1.01** on a held-out sp
 - [Results](#results)
 - [Interpretability (SHAP)](#interpretability-shap)
 - [Reproducibility](#reproducibility)
-- [Project Structure](#project-structure)
-- [Setup & Usage](#setup--usage)
-- [Limitations & Future Work](#limitations--future-work)
-- [Acknowledgements](#acknowledgements)
+
 
 ## Overview
 This project builds a supervised regression pipeline to estimate `reviews_per_month` for Airbnb listings in New York City. We use robust preprocessing with `ColumnTransformer`, evaluate several baseline and tree-based models, tune hyperparameters via `RandomizedSearchCV`, and interpret the final model with SHAP.
@@ -73,7 +70,6 @@ This project builds a supervised regression pipeline to estimate `reviews_per_mo
   3) **Price** level and its log/adjusted variants.
 - SHAP summary/force plots indicate that listings with **recent activity** and **moderate pricing** tend to have higher predicted monthly reviews.
 
-> You can reproduce SHAP plots by running the notebook cells in the `notebooks/` folder (see below).
 
 ## Reproducibility
 - Fixed `random_state=123` where applicable.
